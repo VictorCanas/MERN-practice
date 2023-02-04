@@ -1,10 +1,19 @@
 /* ID are mention with # */
 
-#header-text { /* Defines styling for the element with the ID "header-text" */
- margin: 0 auto; /* The top and bottom margins should be 0 and the left and right margins should be auto */
- position: relative; /* The position of the element should be relative */
- text-align: center; /* The text should be aligned to the center */
- width:60%; /* The width should be 60% */
- z-index: 2 !important; /* The z-index should be 2 and should be important */
- font-weight: bold; /* The font should be bold */
-} /* End of styling for the element with the ID "header-text" */
+#header-text {
+  /* Defines styling for the element with the ID "header-text" */
+  margin: 0 auto;
+  /* The top and bottom margins should be 0 and the left and right margins should be auto */
+  position: relative;
+  /* The position of the element should be relative */
+  text-align: center;
+  /* The text should be aligned to the center */
+  width: 60%;
+  /* The width should be 60% */
+  z-index: 2 !important;
+  /* The z-index should be 2 and should be important */
+  font-weight: bold;
+  /* The font should be bold */
+}
+
+/* End of styling for the element with the ID "header-text" */
