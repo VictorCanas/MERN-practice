@@ -1,7 +1,7 @@
 //Next13 best practice
-import Link from "next/link";
+import FormPost from "./Form";
 
-//Was stuck in a problem using ENV from env.local 
+//Was stuck in a problem using ENV from env.local
 // ? const res = await fetch($$process.env.BASE_URL}/api/getPosts')
 
 async function getPosts() {
@@ -14,16 +14,20 @@ async function getPosts() {
 
 //when we add wait on the function we need to check we have an async function
 export default async function Home() {
-  const data = await getPosts();
+  //lets format the data here-keep in mind this in array
+  const data: { id: number; title: string }[] = await getPosts();
+  //We get back an array of data that is inside a json
+  //how to console log data in an array ?
   console.log(data);
   return (
     <main className="py-8 px-48">
-      <Link
-        className="bg-blue-500 text-black font-medium py-2 px-4 rounded-md"
-        href={"/dashboard"}
-      >
-        Go to the dashboard
-      </Link>
+      {/* Here we import a component */}
+      <FormPost/>
+      {data.map((post) => (
+        <h1 key={post.id} className="text-lg text-white py-6">
+          {post.title}
+        </h1>
+      ))}
     </main>
   );
 }
