@@ -19,6 +19,8 @@ export default function FormPost() {
     if (!res.ok) console.log(res.message);
   }
 
+  //TODO Work next on displaying this in a better way - maybe in the middle - form, make a new post, displaying data
+
   return (
     <form onSubmit={submitPost}>
       <input
