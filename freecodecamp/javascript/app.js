@@ -1,3 +1,5 @@
+//BASIC JAVASCRIPT
+
 // on line comment 
 
 /* Multi-line comment */
@@ -86,3 +88,47 @@ const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
 FirstLine
     \SecondLine
 ThirdLine
+
+// Concatenating Strings with the Plus Equals Operator
+let myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+//This is the first sentence. This is the second sentence.
+
+// Constructing Strings with Variables
+const myName = "Victor";
+const myStr = "My name is " + myName + "and I am well!" ;
+//My name is Victor and I am well!
+
+// Appending Variables to Strings
+const someAdjective = "Cool";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
+//Learning to code is Cool
+
+//Find the Length of a String
+// Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName.length;
+//lastNameLength is now equal to 8 because we have let we can change the data of the varialble
+
+/*Use Bracket Notation to Find the First Character in a String
+For example, the character at index 0 in the word Charles is C. So if const firstName = "Charles", 
+you can get the value of the first letter of the string by using firstName[0]
+*/
+const firstName = "Charles";
+const firstLetter = firstName[0]
+//firstLetter would have a value of the string C.
+
+// Setup
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line
+//Output will be L
+
+
+
